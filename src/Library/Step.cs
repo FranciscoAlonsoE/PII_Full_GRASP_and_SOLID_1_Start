@@ -14,6 +14,7 @@ namespace Full_GRASP_And_SOLID.Library
             this.Input = input;
             this.Time = time;
             this.Equipment = equipment;
+            subTotal = (input.UnitCost * quantity) + (equipment.HourlyCost * time);
         }
 
         public Product Input { get; set; }
@@ -23,5 +24,6 @@ namespace Full_GRASP_And_SOLID.Library
         public int Time { get; set; }
 
         public Equipment Equipment { get; set; }
+        public double subTotal {get; set;}
     }
 }
